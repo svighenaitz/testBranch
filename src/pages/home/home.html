@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header>
+      Technologies
+    </ion-list-header>
+    <ion-item *ngFor="let technology of technologies" (click)="activateModal(technology)">
+      {{ technology.name }}
+    </ion-item>
+  </ion-list>
+
+
+
+
+</ion-content>
